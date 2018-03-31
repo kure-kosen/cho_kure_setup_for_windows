@@ -22,7 +22,8 @@ rbenv install 2.4.2
 rbenv global 2.4.2
 gem install bundler
 
-sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+sudo sh -c "echo deb https://deb.nodesource.com/node_8.x zesty main \ > /etc/apt/sources.list.d/nodesource.list"
 sudo apt update
 sudo apt install -y nodejs
 
