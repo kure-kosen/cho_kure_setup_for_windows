@@ -1,5 +1,6 @@
 sudo apt update
 sudo apt install -y software-properties-common
+sudo apt install -y build-essential
 
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
@@ -17,4 +18,6 @@ $HOME/.rbenv/bin/rbenv init
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-
+sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt update
+sudo apt install nodejs
