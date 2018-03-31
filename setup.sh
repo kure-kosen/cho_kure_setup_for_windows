@@ -25,3 +25,5 @@ gem install bundler
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt update
 sudo apt install nodejs
+
+sudo apt install mysql-server
