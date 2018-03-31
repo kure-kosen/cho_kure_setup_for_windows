@@ -18,6 +18,10 @@ $HOME/.rbenv/bin/rbenv init
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
+rbenv install 2.4.2
+rbenv global 2.4.2
+gem install bundler
+
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt update
 sudo apt install nodejs
