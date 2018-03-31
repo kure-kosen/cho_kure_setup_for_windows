@@ -1,4 +1,6 @@
 sudo apt update
+sudo apt upgrade
+
 sudo apt install -y software-properties-common build-essential libssl-dev libreadline-dev
 
 
@@ -25,3 +27,6 @@ sudo apt install -y git nodejs yarn mysql-server libmysqlclient-dev
 rbenv install 2.4.2
 rbenv global 2.4.2
 gem install bundler
+
+sudo apt update
+sudo apt upgrade
