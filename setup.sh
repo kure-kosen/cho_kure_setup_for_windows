@@ -21,7 +21,6 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 
-sudo apt update
 sudo apt install -y git nodejs yarn mysql-server libmysqlclient-dev
 
 rbenv install 2.4.2
@@ -30,3 +29,6 @@ gem install bundler
 
 sudo apt update
 sudo apt upgrade
+sudo apt autoremove
+
+source ~/.bash_profile
